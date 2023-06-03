@@ -10,4 +10,4 @@ Future updates
 - Tailwind 
 - React
 
-See live here: 
+See live here: https://alisajad001.github.io/alisajadahmadi/
