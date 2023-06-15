@@ -5,19 +5,31 @@
   position: relative;
   align-items: center;
 }
-.hero .hero__top-title {
+.hero .hero-left {
+  animation: slideIn 0.8s ease-out forwards;
+}
+.hero .hero-left .hero__top-title {
   font-weight: 400;
   font-size: 2.25rem;
   color: #1A1500;
   position: relative;
 }
-.hero .hero__title {
+.hero .hero-left .hero__title {
   font-size: 8rem;
   line-height: 0.9;
+  animation: slideIn 1s;
 }
-.hero .hero__btns {
+.hero .hero-left .hero__btns {
   margin-top: 3rem;
   gap: 1.5rem;
   display: flex;
   align-items: center;
+}
+.hero .hero-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  position: relative;
 }/*# sourceMappingURL=styles.css.map */
