@@ -22,7 +22,7 @@ body {
 
 .txt-outline {
   color: #FFD600;
-  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: #1A1500;
 }
 
