@@ -27,7 +27,6 @@
   color: #333333;
   text-decoration: none;
   position: relative;
-  font-size: 0.9rem;
 }
 .header .container .nav ul li a::after {
   content: "";

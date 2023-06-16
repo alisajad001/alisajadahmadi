@@ -47,10 +47,9 @@ body {
   list-style: none;
 }
 .header .container .nav ul li a {
-  color: #282828;
+  color: #333333;
   text-decoration: none;
   position: relative;
-  font-size: 0.9rem;
 }
 .header .container .nav ul li a::after {
   content: "";
@@ -73,4 +72,23 @@ body {
 }
 .header .container .theme i.active {
   color: #1A1A1A;
+}
+
+.hero {
+  position: relative;
+  top: 5.375rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+.hero h1 {
+  font-weight: 500;
+  color: #8a8a8a;
+  font-size: 3rem;
+}
+.hero h1 .txt-black {
+  color: #1A1A1A;
+  font-weight: 600;
 }/*# sourceMappingURL=main.css.map */
