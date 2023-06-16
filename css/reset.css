@@ -5,6 +5,16 @@
   box-sizing: border-box;
 }
 
+:root {
+  --white: #fff;
+  --black: #1A1A1A;
+}
+
+.darkMode {
+  --white: #1A1A1A;
+  --black: #fff;
+}
+
 html {
   font-size: 16px;
   scroll-behavior: smooth;
@@ -12,7 +22,10 @@ html {
 }
 
 body {
+  background-color: var(--white);
+  color: var(--black);
   font-family: "Raleway", sans-serif;
+  transition: 0.5s;
 }
 
 .container {

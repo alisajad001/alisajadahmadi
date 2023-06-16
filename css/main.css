@@ -5,6 +5,16 @@
   box-sizing: border-box;
 }
 
+:root {
+  --white: #fff;
+  --black: #1A1A1A;
+}
+
+.darkMode {
+  --white: #1A1A1A;
+  --black: #fff;
+}
+
 html {
   font-size: 16px;
   scroll-behavior: smooth;
@@ -12,7 +22,10 @@ html {
 }
 
 body {
+  background-color: var(--white);
+  color: var(--black);
   font-family: "Raleway", sans-serif;
+  transition: 0.5s;
 }
 
 .container {
@@ -34,7 +47,7 @@ body {
   height: 100%;
 }
 .header .container .logo {
-  color: #1A1A1A;
+  color: var(--black);
   text-decoration: none;
   font-weight: 600;
   font-size: 1.25rem;
@@ -47,7 +60,7 @@ body {
   list-style: none;
 }
 .header .container .nav ul li a {
-  color: #333333;
+  color: var(--black);
   text-decoration: none;
   position: relative;
 }
@@ -55,7 +68,7 @@ body {
   content: "";
   width: 0;
   height: 2px;
-  background-color: #333333;
+  background-color: var(--black);
   position: absolute;
   left: 0;
   bottom: -5px;
@@ -67,12 +80,9 @@ body {
 }
 .header .container .theme i {
   margin-left: 0.4rem;
-  color: #979797;
+  color: var(--black);
   cursor: pointer;
   font-size: 1.1rem;
-}
-.header .container .theme i.active {
-  color: #1A1A1A;
 }
 .header .container .burger-wrapper {
   display: none;
@@ -116,7 +126,7 @@ body {
   .header .burger-wrapper .burger {
     width: 2rem;
     height: 2px;
-    background-color: #1A1A1A;
+    background-color: var(--black);
     border-radius: 0.5rem;
     transition: all 0.4s ease-in-out;
   }
@@ -125,7 +135,7 @@ body {
     position: absolute;
     width: 2rem;
     height: 2px;
-    background-color: #1A1A1A;
+    background-color: var(--black);
   }
   .header .burger-wrapper .burger::before {
     transform: translateY(-10px);
@@ -142,6 +152,9 @@ body {
   }
   .header .burger-wrapper.active .burger::after {
     transform: rotate(-45deg) translate(35px, 35px);
+  }
+  .header .theme {
+    margin-right: 2rem;
   }
 }
 .hero {
@@ -160,6 +173,6 @@ body {
   padding: 0 0.5rem;
 }
 .hero h1 .txt-black {
-  color: #1A1A1A;
+  color: var(--black);
   font-weight: 600;
 }/*# sourceMappingURL=main.css.map */
