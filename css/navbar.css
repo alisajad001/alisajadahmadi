@@ -1,6 +1,5 @@
 .header {
-  border-bottom: 1px solid #1d1d1d;
-  height: 4.375rem;
+  height: 5.375rem;
   position: fixed;
   width: 100%;
   z-index: 20;
@@ -28,6 +27,7 @@
   color: #333333;
   text-decoration: none;
   position: relative;
+  font-size: 0.9rem;
 }
 .header .container .nav ul li a::after {
   content: "";
