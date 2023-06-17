@@ -308,4 +308,9 @@ footer {
   .header .theme {
     margin-right: 2rem;
   }
+}
+@media (max-width: 700px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
 }/*# sourceMappingURL=main.css.map */
