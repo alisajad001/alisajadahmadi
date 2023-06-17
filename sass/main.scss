@@ -108,3 +108,25 @@
         }
     }
 }
+
+.contact {
+    height: 60vh;
+
+    .contact-options {
+        display: flex;
+        grid-template-columns: repeat(6, 1fr);
+        justify-content: center;
+        margin-top: 7rem;
+        gap: 3rem;
+
+        a {
+            color: var(--black);
+            
+            i {
+                font-size: 4rem;
+                text-align: center;
+            }
+        }
+
+    }
+}

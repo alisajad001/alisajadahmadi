@@ -273,4 +273,22 @@ body {
 }
 .portfolio .portfolio-cards .cards__card a:hover {
   padding: 0.7rem 2rem;
+}
+
+.contact {
+  height: 60vh;
+}
+.contact .contact-options {
+  display: flex;
+  grid-template-columns: repeat(6, 1fr);
+  justify-content: center;
+  margin-top: 7rem;
+  gap: 3rem;
+}
+.contact .contact-options a {
+  color: var(--black);
+}
+.contact .contact-options a i {
+  font-size: 4rem;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
