@@ -18,9 +18,9 @@
 }
 
 .about {
-    height: 100vh;
-    padding-top: 5.273rem;
-
+    height: auto;
+    padding-bottom: 7rem;
+    
     h2 {
         margin-bottom: 3rem;
         color: var(--black);
@@ -31,19 +31,15 @@
         font-size: 1.5rem;
         color: var(--gray);
     }
-
-    @media screen and (max-width: 600px) {
-        .container {
-            padding: 0 2rem;
-        }
-    }
 }
 
 .skills {
-    height: 60vh;
+    height: auto;
+    padding-bottom: 6rem;
 
     .skills-icons {
         display: flex;
+        flex-wrap: wrap;
         grid-template-columns: repeat(6, 1fr);
         justify-content: center;
         margin-top: 7rem;
@@ -54,12 +50,13 @@
             text-align: center;
         }
     }
+    
 }
 
 .portfolio {
     height: auto;
-    padding-bottom: 3rem;
-
+    padding-bottom: 6rem;
+    
     .portfolio-cards {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -67,7 +64,7 @@
         align-content: center;
         gap: 3rem;
         margin-top: 5rem;
-
+        
         .cards__card {
             display: flex;
             flex-direction: column;
@@ -93,16 +90,28 @@
             
             a {
                 position: absolute;
-                font-size: 1.3rem;
                 background-color: var(--black);
                 color: var(--white);
                 padding: 0.7rem;
                 bottom: 0;
                 text-decoration: none;
                 transition: 0.4s;
-
+                font-weight: 300;
+                
                 &:hover {
                     padding: 0.7rem 2rem;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 800px) {
+        .portfolio-cards {
+            grid-template-columns: 1fr;
+
+            .cards__card {
+                a {
+                    font-size: 0.8rem;
                 }
             }
         }
@@ -111,22 +120,32 @@
 
 .contact {
     height: 60vh;
-
+    
     .contact-options {
         display: flex;
+        flex-wrap: wrap;
         grid-template-columns: repeat(6, 1fr);
         justify-content: center;
         margin-top: 7rem;
         gap: 3rem;
-
+        
         a {
             color: var(--black);
-            
+
             i {
-                font-size: 4rem;
+                font-size: 3rem;
                 text-align: center;
             }
         }
-
+        
     }
 }
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    color: var(--gray);
+}
+
+@import 'responsive';
