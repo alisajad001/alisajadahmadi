@@ -39,6 +39,23 @@
     }
 }
 
+.skills {
+    height: 60vh;
+
+    .skills-icons {
+        display: flex;
+        grid-template-columns: repeat(6, 1fr);
+        justify-content: center;
+        margin-top: 7rem;
+        gap: 3rem;
+
+        i {
+            font-size: 4rem;
+            text-align: center;
+        }
+    }
+}
+
 .portfolio {
     height: auto;
     padding-bottom: 3rem;
