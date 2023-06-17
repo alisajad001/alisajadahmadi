@@ -9,20 +9,24 @@
 :root {
     --white: #fff;
     --black: #1A1A1A;
+    --gray: #8a8a8a;
 }
 
 
 .darkMode {
     --white: #1A1A1A;
     --black: #fff;
+    --gray: #8a8a8a;
+}
+
+.txt-black {
+    color: var(--black);
 }
 
 html {
     font-size: 16px;
     scroll-behavior: smooth;
-    scroll-padding-top: 4.375rem;
-    scroll-snap-type: y mandatory;
-    scroll-margin-top: 2.4rem;
+    scroll-padding-top: 5rem;
 }
 
 body {

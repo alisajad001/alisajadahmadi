@@ -3,6 +3,8 @@
   position: fixed;
   width: 100%;
   z-index: 20;
+  border-bottom: 1px solid var(--gray);
+  background-color: var(--white);
 }
 .header .container {
   display: flex;

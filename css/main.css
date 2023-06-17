@@ -8,19 +8,23 @@
 :root {
   --white: #fff;
   --black: #1A1A1A;
+  --gray: #8a8a8a;
 }
 
 .darkMode {
   --white: #1A1A1A;
   --black: #fff;
+  --gray: #8a8a8a;
+}
+
+.txt-black {
+  color: var(--black);
 }
 
 html {
   font-size: 16px;
   scroll-behavior: smooth;
-  scroll-padding-top: 4.375rem;
-  scroll-snap-type: y mandatory;
-  scroll-margin-top: 2.4rem;
+  scroll-padding-top: 5rem;
 }
 
 body {
@@ -55,6 +59,8 @@ body {
   position: fixed;
   width: 100%;
   z-index: 20;
+  border-bottom: 1px solid var(--gray);
+  background-color: var(--white);
 }
 .header .container {
   display: flex;
@@ -179,15 +185,33 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: 90vh;
 }
 .hero h1 {
   font-weight: 500;
-  color: #8a8a8a;
+  color: var(--gray);
   font-size: 3rem;
   padding: 0 0.5rem;
 }
-.hero h1 .txt-black {
+
+.about {
+  height: 100vh;
+  padding-top: 5.273rem;
+}
+.about .container {
+  padding: 0 5rem;
+}
+.about h2 {
+  margin-bottom: 3rem;
   color: var(--black);
-  font-weight: 600;
+}
+.about p {
+  line-height: 2;
+  font-size: 1.5rem;
+  color: var(--gray);
+}
+@media screen and (max-width: 600px) {
+  .about .container {
+    padding: 0 2rem;
+  }
 }/*# sourceMappingURL=main.css.map */
