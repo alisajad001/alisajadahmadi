@@ -5,32 +5,7 @@
 
     .header {
         .nav {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 100vh;
-            background-color: #239cff;
             display: none;
-            transition: 0.4s;
-
-            ul {
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                height: 100%;
-
-                li {
-                    margin: 1rem 0;
-
-                    a {
-                        font-size: 2rem;
-                        color: #fff !important;
-                    }
-                }
-
-            }
         }
 
         .burger-wrapper {
@@ -79,10 +54,6 @@
         
         .burger-wrapper.active .burger::after {
             transform: rotate(-45deg) translate(35px, 35px);
-        }
-
-        .theme {
-            margin-right: 2rem;
         }
     }
 }

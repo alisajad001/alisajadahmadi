@@ -3,28 +3,7 @@
     padding: 0 2rem;
   }
   .header .nav {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100vh;
-    background-color: #239cff;
     display: none;
-    transition: 0.4s;
-  }
-  .header .nav ul {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-  }
-  .header .nav ul li {
-    margin: 1rem 0;
-  }
-  .header .nav ul li a {
-    font-size: 2rem;
-    color: #fff !important;
   }
   .header .burger-wrapper {
     position: relative;
@@ -65,8 +44,5 @@
   }
   .header .burger-wrapper.active .burger::after {
     transform: rotate(-45deg) translate(35px, 35px);
-  }
-  .header .theme {
-    margin-right: 2rem;
   }
 }/*# sourceMappingURL=responsive.css.map */

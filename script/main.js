@@ -1,22 +1,7 @@
-const burgerWrapper = document.querySelector('.burger-wrapper');
-const navbar = document.querySelector('.nav');
 const sunIcon = document.querySelector('.fa-sun');
 const body = document.body;
 
 let menuOpen = false;
-
-// Opens and closes navabar
-burgerWrapper.addEventListener('click', () => {
-    if (!menuOpen) {
-        burgerWrapper.classList.add('active');
-        navbar.style.display = 'block';
-        menuOpen = true;
-    } else {
-        burgerWrapper.classList.remove('active');
-        navbar.style.display = 'none';
-        menuOpen = false;
-    }
-});
 
 // Toggles between dark mode and light mode
 sunIcon.addEventListener('click', () => {
