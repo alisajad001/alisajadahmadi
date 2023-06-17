@@ -37,7 +37,7 @@ body {
 .container {
   max-width: 80rem;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 4rem;
 }
 
 .slideUp {
@@ -185,7 +185,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  height: 100vh;
 }
 .hero h1 {
   font-weight: 500;
@@ -197,9 +197,6 @@ body {
 .about {
   height: 100vh;
   padding-top: 5.273rem;
-}
-.about .container {
-  padding: 0 5rem;
 }
 .about h2 {
   margin-bottom: 3rem;
@@ -214,4 +211,51 @@ body {
   .about .container {
     padding: 0 2rem;
   }
+}
+
+.portfolio {
+  height: auto;
+  padding-bottom: 3rem;
+}
+.portfolio .portfolio-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-content: center;
+  gap: 3rem;
+  margin-top: 5rem;
+}
+.portfolio .portfolio-cards .cards__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--black);
+  border-radius: 0.4rem;
+  position: relative;
+}
+.portfolio .portfolio-cards .cards__card img {
+  border-radius: 0.4rem;
+  filter: grayscale(1);
+  opacity: 0.6;
+  width: 100%;
+  height: 100%;
+  transition: 0.4s;
+}
+.portfolio .portfolio-cards .cards__card img:hover {
+  filter: grayscale(0);
+  opacity: 0.9;
+}
+.portfolio .portfolio-cards .cards__card a {
+  position: absolute;
+  font-size: 1.3rem;
+  background-color: var(--black);
+  color: var(--white);
+  padding: 0.7rem;
+  bottom: 0;
+  text-decoration: none;
+  transition: 0.4s;
+}
+.portfolio .portfolio-cards .cards__card a:hover {
+  padding: 0.7rem 2rem;
 }/*# sourceMappingURL=main.css.map */
