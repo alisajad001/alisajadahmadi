@@ -212,14 +212,14 @@ body {
 }
 
 .contact {
-  height: 60vh;
+  height: 30vh;
 }
 .contact .contact-options {
   display: flex;
   flex-wrap: wrap;
   grid-template-columns: repeat(6, 1fr);
   justify-content: center;
-  margin-top: 7rem;
+  margin-top: 3rem;
   gap: 3rem;
 }
 .contact .contact-options a {
