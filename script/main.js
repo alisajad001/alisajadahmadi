@@ -25,7 +25,7 @@ window.addEventListener('load', () => {
     }
 })
 
-// 
+// Hover effect on Icons
 skillIcons.forEach((skillIcon) => {
     skillIcon.addEventListener('mouseover', () => {
         skillIcon.style.transform = 'scale(1.2)';
