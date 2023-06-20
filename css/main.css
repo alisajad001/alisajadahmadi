@@ -154,6 +154,7 @@ body {
 .skills .skills-icons i {
   font-size: 4rem;
   text-align: center;
+  transition: all 0.3s ease-in-out;
 }
 
 .portfolio {
@@ -228,12 +229,13 @@ body {
 .contact .contact-options a i {
   font-size: 3rem;
   text-align: center;
+  transition: all 0.2s ease-in-out;
 }
 
 footer {
   text-align: center;
   padding: 1rem 0;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: var(--gray);
 }
 
